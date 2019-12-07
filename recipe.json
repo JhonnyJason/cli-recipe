@@ -1,0 +1,37 @@
+{
+    "staticBase": [
+        ["merge"],
+        {
+            "merge": ["https://github.com/JhonnyJason/root-template"]
+        }
+    ],
+    "toolset": [
+        ["submodule"],
+        ["use"],
+        {
+            "use": ["https://github.com/JhonnyJason/toolset"]
+        }
+    ],
+    "sources": [
+        ["submodule"],
+        ["merge", "create"],
+        {
+            "create": ["clisources"],
+            "merge": ["https://github.com/JhonnyJason/thingycreate-as-thingy-sources", "*"]
+        }
+    ],
+    "output": [
+        ["submodule"],
+        ["merge"],
+        {
+            "merge": ["https://gitlab.com/lenny09918050/lenny-unlicense"]
+        }
+    ],
+    "testing": [
+        ["directory"],
+        ["merge"],
+        {
+            "merge": ["https://gitlab.com/lenny09918050/lenny-unlicense"]
+        }
+    ]
+}
